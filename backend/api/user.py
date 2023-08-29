@@ -10,7 +10,7 @@ def get_unique(**kwargs):
         unique = CSVManager().get_unique_persons()
         print(unique)
         return {'unique':unique}, 200
-        
+        #rushikesh git check 1
     except Exception as e:
         print(e)
         return {"status": "Server Error"}, 500
@@ -22,7 +22,7 @@ def get_person(**kwargs):
         lis = CSVManager().get_all_person(data)
         print(lis)
         return {'lis':lis}, 200
-        
+        #grushikesh git check 2
     except Exception as e:
         print(e)
         return {"status": "Server Error"}, 500
